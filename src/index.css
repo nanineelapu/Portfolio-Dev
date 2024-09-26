@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rounded Mplus 1c Medium";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  color: #fff;
+
+}
+
+::selection {
+  color: aqua;
+}
+
+button {
+  border: 1px solid #00FFFF;
+  padding: .4vw 1vw;
+  border-radius: 5px;
+  font-size: 1vw;
+}
+
+.card {
+  overflow: hidden;
+}
+
+p {
+  font-size: 1.2vw;
+  font-family: "Source serif 4";
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: slideUp 1s ease-in 3s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    top: -100%;
+  }
+}
+
+.title {
+  font-size: 2vw;
+  padding: 1vw 1vw;
+  border: 1px solid #00FFFF;
+}
+
+.title:hover {
+  background-color: #00FFFF;
+  color: #000;
+  cursor: pointer;
+
+}
+
+input {
+  background-color: transparent;
+  color: aqua;
+  border: 1px solid #00FFFF;
+  width: 100%;
+}
